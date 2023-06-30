@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: vprocache01
 spec:
-  prots:
+  allocateLoadBalancerNodePortsts:
     - port: 11211
       targetPort: vpromc-port
       protocol: TCP

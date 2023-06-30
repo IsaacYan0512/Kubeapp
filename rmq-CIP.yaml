@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: vpromq01
 spec:
-  prots:
+  ports:
     - port: 15672
       targetPort: vpromq01-port
       protocol: TCP
