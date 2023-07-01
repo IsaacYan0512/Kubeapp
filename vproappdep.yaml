@@ -21,10 +21,10 @@ spec:
         - containerPort: 8080
           name: vproapp-port
 
-      initContainers:
-        - name: wait-for-db
-          image: busybox
-          command: [ 'sh', '-c', 'until nslookup vprodb;do echo waiting for mydb; sleep 2; done;' ]
-        - name: wait-for-mc
-          image: busybox
-          command: [ 'sh', '-c', 'until nslookup vprocache01; do echo waiting for mydb; sleep 2; done;' ]
+      #initContainers:
+      #  - name: wait-for-db
+      #    image: busybox
+      #    command: [ 'sh', '-c', 'until nslookup vprodb;do echo waiting for mydb; sleep 2; done;' ]
+      #  - name: wait-for-mc
+       #   image: busybox
+       #   command: [ 'sh', '-c', 'until nslookup vprocache01; do echo waiting for mydb; sleep 2; done;' ]
