@@ -39,3 +39,9 @@ spec:
             volumeID: vol-084c990567b58091c
             fsType: ext4
 
+      initContainers:
+        - name: busybox
+          image: busybox:latest
+          volumentMounts:
+            - name: vpro-db-data
+            - mountPath: /var/lib/mysql
