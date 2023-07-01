@@ -17,6 +17,8 @@ spec:
       containers:
         - name: vprodb
           image: isaac3687/vprofiledb:V1
+          securityContext:
+            runAsUser: 999
           #args:
           # - "--ignore-db-dir=lost+found"
           volumeMounts:
